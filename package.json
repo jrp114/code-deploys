@@ -18,7 +18,7 @@
     "url": "https://github.com/jrp114/code-deploys/issues"
   },
   "homepage": "https://github.com/jrp114/code-deploys#readme",
-  "dependencies": {
+  "devDependencies": {
     "migrate-mongo": "^9.0.0"
   }
 }
