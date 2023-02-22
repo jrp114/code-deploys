@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "echo \"Postbuild run here for ${CODE_LINE}\" && exit 1"
+    "post-run-script": "echo \"Post-run-script run here for ${CODE_LINE}\" && exit 1",
+    "heroku-postbuild": "npm run post-run-script"
   },
   "repository": {
     "type": "git",
