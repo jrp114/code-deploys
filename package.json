@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "post-run-script": "echo \"Post-run-script run here for ${CODE_LINE}\" && exit 1",
-    "heroku-postbuild": "npm run post-run-script"
+    "db-up": "MONGO_DB_URI=${MONGO_DB_URI} MONGO_DB_NAME=${MONGO_DB_NAME} migrate-mongo up",
+    "heroku-postbuild": "npm run db-up"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jrp114/code-deploys/issues"
   },
-  "homepage": "https://github.com/jrp114/code-deploys#readme"
+  "homepage": "https://github.com/jrp114/code-deploys#readme",
+  "dependencies": {
+    "migrate-mongo": "^9.0.0"
+  }
 }
