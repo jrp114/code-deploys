@@ -20,5 +20,8 @@
   "homepage": "https://github.com/jrp114/code-deploys#readme",
   "devDependencies": {
     "migrate-mongo": "^9.0.0"
+  },
+  "dependencies": {
+    "mongoose": "^6.9.2"
   }
 }
