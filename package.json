@@ -1,0 +1,19 @@
+{
+  "name": "code-deploys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrp114/code-deploys.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrp114/code-deploys/issues"
+  },
+  "homepage": "https://github.com/jrp114/code-deploys#readme"
+}
