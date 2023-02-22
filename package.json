@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db-up": "MONGO_DB_URI=${MONGO_DB_URI} MONGO_DB_NAME=${MONGO_DB_NAME} migrate-mongo -h",
+    "db-up": "MONGO_DB_URI=${MONGO_DB_URI} MONGO_DB_NAME=${MONGO_DB_NAME} migrate-mongo up",
     "heroku-postbuild": "npm run db-up"
   },
   "repository": {
