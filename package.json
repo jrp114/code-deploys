@@ -22,6 +22,7 @@
     "migrate-mongo": "^9.0.0"
   },
   "dependencies": {
+    "generate-password": "^1.7.0",
     "mongoose": "^6.9.2"
   }
 }
