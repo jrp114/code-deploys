@@ -9,6 +9,8 @@ module.exports = {
     const teams = await findAll()
     for (const team of teams) {
       const { organization, season } = team;
+      console.log('Organization ID: ', organization)
+      console.log('Season ID: ', season)
       const organizationId = mongoose.Types.ObjectId(organization);
       const seasonId = mongoose.Types.ObjectId(season);
       db.collection('organizations').updateOne({ _id: organizationId }, { $addToSet: {
