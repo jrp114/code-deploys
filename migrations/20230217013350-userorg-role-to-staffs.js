@@ -12,7 +12,7 @@ module.exports = {
     const userorgs = await findAll()
     const staffs = await findAllStaffs()
     for (const uo of userorgs) {
-      const staff = staffs.find(s => s.userOrganization.toString() === uo._id.toString())
+      const staff = staffs.find(s => s.userOrganization && uo._id && s.userOrganization.toString() === uo._id.toString())
       if (staff) {
         await db.collection('staffs').updateOne({ _id: staff._id }, { $set: { role: uo.role } })
       } else {
